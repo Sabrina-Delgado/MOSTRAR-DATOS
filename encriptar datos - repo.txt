@@ -1,0 +1,2 @@
+Repositorio:
+git remote add origin https://github.com/Sabrina-Delgado/MOSTRAR-DATOS.git
