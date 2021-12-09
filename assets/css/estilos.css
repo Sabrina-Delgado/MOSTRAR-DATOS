@@ -3,9 +3,14 @@ html{
 }
 body {
     font-family: 'Century Gothic',sans-serif ;
+    width: 100%;
+    padding: 0;
+    margin: 0; 
+    
+    
 }
 header{
-    height: 6%;
+    height: 5vw;
     width: 100%;
     padding: 0;
     text-align: center;
@@ -25,7 +30,7 @@ header{
     align-items: stretch;
     list-style: none; /*no borrar*/
     width: 100%;
-    height: 6%;
+    height: 5vw;
     align-self: flex-start;  
     overflow: auto;
     margin: 0; 
@@ -34,7 +39,7 @@ header{
 }
 .menu-icono-li {
     width: 33%;
-    height: 100%;
+    height: 5vw;
     background-color: blue;
     text-align: center;
     flex-wrap: nowrap;
@@ -46,12 +51,25 @@ header{
 .menu-icono {
     background-color: rgb(10, 238, 29);
     display: block;
-    font-size: 100% 100%;
+    font-size: 2.5vw;
     width: 100%;
-    height: 100%;
+    height: 5vw;
     flex-wrap: nowrap;
     text-decoration: none;
-
-    
+    text-align: center;
+    align-content: center;
+    align-self: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: inline-block;
 }
+
+.primera-hoja {
+    background-image: url(assets/img/hoja-1.jpg); 
+    width: 100%; 
+    height: 42vw; 
+    margin-left: 0; 
+    margin-right: 0;  
+}
+
 
