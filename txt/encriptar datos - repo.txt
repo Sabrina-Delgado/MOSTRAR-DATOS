@@ -1,0 +1,32 @@
+REPOSITORIO VISTUAL
+-Repositorio:
+git remote add origin https://github.com/Sabrina-Delgado/MOSTRAR-DATOS.git
+-tokem:
+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
+-git:
+git remote add origin https://Sabrina-Delgado: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@github.com/Sabrina-Delgado/MOSTRAR-DATOS.git
+
+LINKS DE REFERENCIAS
+- https://www.nosequeestudiar.net/carreras/
+
+INFORACION DEL PROYECTO
+--Organizacion de la informacion----
+-Carreras a utilizar: 43
+        INGIENERIAS:  8
+    [ing.industrial, ing.forestal, ing.zootecnica , ing.electromecanica, ing.electronica, ing.mecanica , ing, civil, ing, sistemas] 
+
+        CINECIAS SOCIALES:8
+    [Psicopedagogia, Sociologia, Cs.Politicas, turismo, Relaciones laboraless y RRHH, Filosofia, Criminlistica, Trabajosocial] 
+
+        COMUNICACIONES: 7
+    [Diseño grafico, Periodismo y comunicacion social, ing.informatica, Fotografia, Traductores, Cine y audiovisules, diseño indementaria] 
+
+        MEDICINA:  7
+    [Bioquimica, Agronomia, Bromatilogia, "#Biologia", Ing.en alimentos, Nutricion, Veterinaria, Farmacia]
+
+        HUMANIDADES:6
+    [Arquitectura, Antropologia, Paleontologia,Oceonagrafia,Artes visuales, Prof.HIstoria]  
+
+        CONTABILIDAD: 7
+    [Contaduria, Escribania, Comercio exterior, Abogacia, Economia, Administracion de empresas,Relaciones internacionales] 
+-

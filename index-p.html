@@ -6,74 +6,202 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrearas Universitarias</title>
     <link rel="stylesheet" href="assets/css/estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <header>
     <nav>
     <ul class="menu-principal">
         <li class="menu-icono-li"><a class="menu-icono"  href="index-p.html">Icono(poner img)</a></li> 
-        <li class="menu-icono-li"><a class="menu-icono" herf="#">Te puede ayudar</a></li>
-        <li class="menu-icono-li"><a class="menu-icono" herf="#">Registrate</a></li>
+        <li class="menu-icono-li"><a class="menu-icono" >Te puede ayudar</a></li>
+        <li class="menu-icono-li" id="registrate-li"><a class="menu-icono">Registrate</a></li>
     </ul>
     </nav>
 </header>
 <body >
-<div class="primera-hoja"  >
+<!--form para barra , registrates-->
+<div class="registrate" id="formulario-registrate">
+    <form>
+        <div>
+            <label for="name">Nombre</label>
+            <input type="text"></input>
+        </div>
+        <div>
+            <label for="name">Apellido</label>
+            <input type="text"></input>
+        </div>
+        <label for="email-ejemplo">Correo</label>
+        <input type="email-ejemplo" placeholder="Ingrese su correo"
+            name="email-ejemplo"> </input>
+
+        <p>Fecha de Nacimineto</p>
+        <input type="date">
+        <p>Adjunta la foto de tu DNI o Documento de identidad. Para saber si eres mayor de edad</p>
+        <input type="file">
+        <p>Crea tu contraseña:</p>
+        <input type="password">
+        <p>Selecciona tu usuario</p>
+        <p>Gracias por registrarte</p>   
+    </form>
+    <button id="form-enviar">Enviar</button>
+    <button id="form-cerrar">Cerrar</button>
+</div>
+<!--Primera pagina-->
+<div class="primera-hoja" style="background-image: url(assets/img/hoja-1.jpg);" >
     <div class="hoja-1">
-        <h1 class="titulo">Descubre tu vacocion</h1>
+        <h1 class="titulo">Descubre tu VOCACION</h1>
         <p class="decir">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe quas nihil aperiam soluta ipsum similique maxime aliquid fugiat dolore, dolorum adipisci sequi iure delectus tempore obcaecati ullam voluptatem temporibus. A!</p>
     </div>
 </div>
 
 <!--Segunda pagina-->
-<div class="segunda hoja">
-    <button type="button" name="escoge-carrera" id="escoge-carrera"></button>De que se trata tu carrera</button> <!--abrir div "men-carreras"-->
-        <div class="menu-busca-carrera" id="menu-busca-carrera" name="menu-busca-carrera">
-            <h2 class="titulo-menu-carreras">Carreras mas populares</h2>
-            <ul class="lista-carreras"> <!--links para abrir carreras relacionadas-->
-                <li>Lorem ipsum </li> <!--añadir src a carreras relacionadas-->
-                <li>Lorem ipsum </li> <!--añadir src a carreras relacionadas-->
-                <li>Lorem ipsum </li> <!--añadir src a carreras relacionadas-->
-                <li>Lorem ipsum </li> <!--añadir src a carreras relacionadas-->
-            </ul>
-        </div>
-    <button type="button" name="boton-test" id="boton-test" > Haz tu test AQUI</button> <!--Ir a link otros-->
-    <div class="carreras-principal">
-        <div class="carreras-principal-1">
-            <h1>carrrea ......</h1>
-            <input type="image" src="assets/img/imgprueba.jpeg" width="10px">
-        </div>
-        <div class="carreras-principal-1">
-            <h1>carrrea ......</h1>
-            <input type="image" src="assets/img/imgprueba.jpeg" width="10px">
-        </div>
-        <div class="carreras-principal-1">
-            <h1>carrrea ......</h1>
-            <input type="image" src="assets/img/imgprueba.jpeg" width="10px">
-        </div>
-        <div class="carreras-principal-1">
-            <h1>carrrea ......</h1>
-            <input type="image" src="assets/img/imgprueba.jpeg" width="10px">
-        </div>
-        <div class="carreras-principal-1">
-            <h1>carrrea ......</h1>
-            <input  type="image" src="assets/img/imgprueba.jpeg" width="10px">
-        </div>
-        <div class="carreras-principal-1">
-            <h1>carrrea ......</h1>
-            <input type="image" src="assets/img/imgprueba.jpeg"width="10px" >
-        </div>
-        <div class="carreras-principal-1">
-            <h1>carrrea ......</h1>
-            <input type="image" src="assets/img/imgprueba.jpeg" width="10px">
-        </div>
-        <div class="carreras-principal-1">
-            <h1>carrrea ......</h1>
-            <input type="image" src="assets/img/imgprueba.jpeg" width="10px">
-        </div>
-        <button class="boton-mas-carreras" type="button" id="boton-mas-carreras">Ver mas carreras</button>
+<div class="segunda hoja" id="segundahoja">
+    <button type="button" name="escoge-carrera" id="escoge-carrera" class="boton-menu1-aparecer" >De que se trata tu carrera</button> <!--abrir div "men-carreras"-->
+    <div class="menu-busca-carrera" id="menu-busca-carrera" name="menu-busca-carrera">
+        <h2 class="titulo-menu-carreras">Carreras mas populares</h2>
+        <ul class="lista-carreras"> <!--links para abrir carreras relacionadas-->
+            <li id="comunicacionescomun">Comunicaciones</li> <!--añadir src a carreras relacionadas-->
+            <li id="medicinacomun">Medicina </li> <!--añadir src a carreras relacionadas-->
+            <li >Lorem ipsum </li> <!--añadir src a carreras relacionadas-->
+            <li >Lorem ipsum </li> <!--añadir src a carreras relacionadas-->
+        </ul>
+        <button type="button" id="menu1Cerrar">Cerrar</button>
     </div>
+    
+    <button type="button" herf="https://www.elegircarrera.net/test-vocacional/" name="boton-test" id="boton-test" > Haz tu test AQUI</button> <!--Ir a link otros-->
+    
+    
+    <div class="carreras-principal">
+        <!--Presenatcion de Carreras 1-->
+        <ul class="flex-container" id="vermas1">
+            <li class="flex-item" id=liingalimentos>
+                <h3>Ingeniería de Alimentos </h3>
+                <img src="assets/img/ingalimentos.jpg" class="gato" id="imageingalimentos">
+                <div id="ingalimentos">
+                    <p >La ingeniería en alimentos es un campo multidisciplinario que combina microbiología, química, física aplicada e ingeniería. La ingeniería de alimentos incluye, entre otros.Diseña, supervisa y controla procesos de fabricación y conservación de productos alimenticios. Determina las condiciones óptimas de operación del equipo utilizados en el proceso de producción. Realiza control de calidad de productos alimenticios.</p>
+                    <a href="#">Estadistica</a>
+                    <button id="cerrarcarreraingalimentos">Cerrar</button>
+                </div>
+            </li>
+            <li class="flex-item" id=litraductores>
+                <h3>Traductores</h3>
+                <img src="assets/img/traductor.png" class="gato" id="imagetraductores">
+                <div id="traductores">
+                    <p>La carrera de Cinematografía te prepara con conocimientos de otras áreas o carreras como: Artes Audiovisuales, Realización Cinematográfica, Dirección de Cine y Televisión, Fotografía, Literatura, entre otras. Dependiendo qué rama de la cinematografía te interese puedes escoger entre especializarte en un área u otra.</p>
+                    <a href="#">Estadistica</a>
+                    <button id="cerrarcarreratraductores">Cerrar</button>
+                </div>
+            </li>
+            <li class="flex-item" id=linutricion>
+                <h3>Nutricion</h3>
+                <img src="assets/img/nutricion.jpg" class="gato" id="imagenutricion">
+                <div id="nutricion">
+                    <p>La Nutrición es una carrera que pertenece al área de la salud, se encarga de estudiar las relaciones entre la alimentación y la salud de las personas. ... Parte de conocimientos en bioquímica, química orgánica y psicología, pero también comprende aptitudes en la gestión de salubridad alimentaria y servicios de salud</p>
+                    <a href="#">Estadistica</a>
+                    <button id="cerrarcarreranutricion">Cerrar</button>
+                </div>
+            </li>
+            <li class="flex-item" id="licine">
+                <h3>Cine y Audio Visuales</h3>
+                <img src="assets/img/cine.jpg" class="gato" id="imagecine">
+                <div id="cine">
+                    <p>La carrera de Cinematografía te prepara con conocimientos de otras áreas o carreras como: Artes Audiovisuales, Realización Cinematográfica, Dirección de Cine y Televisión, Fotografía, Literatura, entre otras. Dependiendo qué rama de la cinematografía te interese puedes escoger entre especializarte en un área u otra.</p>
+                    <a href="#">Estadistica</a>
+                    <button id="cerrarcarreracine">Cerrar</button>
+                </div>
+            </li>
+            <li class="flex-item" id="liagronomia">
+                <h3>Agronomia</h3>
+                <img src="assets/img/agronomia.jpg" class="gato" id="imageagronomia">
+                <div id="agronomia">
+                    <p>La agronomía es el conjunto de conocimientos científicos y tecnológicos que rigen la práctica de la agricultura, que es el arte de cultivar la tierra para producir alimentos y otras materias primas útiles para el ser humano</p>
+                    <a href="#">Estadistica</a>
+                    <button id="cerrarcarreraagronomia">Cerrar</button>
+                </div>
+            </li>
+            <li class="flex-item" id="liperiodismo" >
+                <h3>Periodismo y comunicacion social</h3>
+                <img src="assets/img/periodismo.jpg" class="gato" id="imageperiodismo">
+                <div id="periodismo">
+                    <p>La Comunicación Social abarca desde el periodismo hasta la comunicación interna en una empresa. ... El profesional de Comunicación Social que elija orientarse al periodismo estará relacionado con el “qué” y el “por qué” sobre los fenómenos que suceden en la sociedad: su labor será comprender y comunicar de la mejor manera.</p>
+                    <a href="#">Estadistica</a>
+                    <button id="cerrarcarreraperiodismo">Cerrar</button>
+                </div>
+            </li>
+            <!--Boton para ver mas number 1-->
+            <button class="boton-mas-carreras" type="button" id="mcarreras1">Ver mas carreras</button>
+        </ul>
+        
+        <!--Presenatcion de Carreras 2-->
+        <ul class="flex-container" id="vermas2">
+            <li class="flex-item" id=lidgrafico>
+                <h3>Diseño grafico </h3>
+                <img src="assets/img/diseño grafico.jfif" class="gato" id="imagedgrafico">
+                <div id="dgrafico">
+                    <p >El diseño gráfico es la profesión que tiene como objetivo crear y transmitir mensajes a través de la imagen. ... El diseño gráfico también es llamado comunicación visual y es una profesión con una gran demanda debido al desarrollo de la tecnología y las formas actuales mediante las que los seres humanos nos comunicamos</p>
+                    <a href="#">Estadistica</a>
+                    <button id="cerrarcarreradgrafico">Cerrar</button>
+                </div>
+            </li>
+            <li class="flex-item" id=libioquimica >
+                <h3>Bioquimica</h3>
+                <img src="assets/img/Bioquimica.jpg" class="gato" id="imagebioquimica">
+                <div id="bioquímica">
+                    <p>La bioquímica (también conocida como química biológica) se centra en los procesos de investigación biomédica que ocurren a nivel molecular, que incluyen lo que sucede dentro de nuestras células, estudiando proteínas y orgánulos.</p>
+                    <a href="#">Estadistica</a>
+                    <button id="cerrarcarrerabioquímica">Cerrar</button>
+                </div>
+            </li>
+            <li class="flex-item" id=lifoto >
+                <h3>Fotografia</h3>
+                <img src="assets/img/fotografia.jpg" class="gato" id="imagefoto">
+                <div id="foto">
+                    <p>Básicamente, en todo curso de fotografía aprenderemos a captar y editar imágenes de calidad a partir del conocimiento de los distintos elementos que integran una cámara de fotos, su aplicación práctica en base a diferentes técnicas fotográficas y el manejo de un programa de edición de imagen como es Photoshop.</p>
+                    <a href="#">Estadistica</a>
+                    <button id="cerrarcarrerafoto">Cerrar</button>
+                </div>
+            </li>
+            <li class="flex-item" id=libromatologia >
+                <h3>Bromatilogia</h3>
+                <img src="assets/img/Bromatologia.jpg" class="gato" id="imagebromatologia">
+                <div id="bromatología">
+                    <p>La bromatología es una especialidad que analiza en profundidad las sustancias que ingiere en ser humano para sobrevivir.  La bromatología se ocupa, por tanto, de investigar la composición química, las calorías, los nutrientes, las propiedades físicas y la toxicología de los alimentos, entre otras propiedades</p>
+                    <a href="#">Estadistica</a>
+                    <button id="cerrarcarrerabromatologia">Cerrar</button>
+                </div>
+            </li>
+            <li class="flex-item" id=liveterinaria>
+                <h3>Veterinaria</h3>
+                <img src="assets/img/Veterinaria.jpeg" class="gato" id="imageveterinaria">
+                <div id="veterinaria">
+                    <p>La carrera en Medicina Veterinaria y Zootecnia tiene una duración de 5 años. En ella estudiarás a los animales desde nivel celular hasta orgánico, pasando por su fisiología y las distintas patologías que pueden sufrir. ... Recursos y Sistemas de alimentación animal. Toxicología veterinaria</p>
+                    <a href="#">Estadistica</a>
+                    <button id="cerrarcarreraveterinaria">Cerrar</button>
+                </div>
+            </li>
+            <li class="flex-item" id="limoda" >
+                <h3>Diseño de Indumentaria</h3>
+                <img src="assets/img/modaindumentaria.jpg" class="gato" id="imagemoda">
+                <div id="moda">
+                    <p>El diseño de modas es la aplicación de los principios del arte y el diseño a las prendas de ropa y accesorios que las personas utilizan. ... Estudiar Diseño de Modas te da las herramientas necesarias para analizar el mercado global e idear el mejor producto, de acuerdo a la demanda de necesidades y preferencias</p>
+                    <a href="#">Estadistica</a>
+                    <button id="cerrarcarreramoda">Cerrar</button>
+                </div>
+            </li>
+            <!--Boton para ver mas number 1-->
+            <button class="mascarreras" type="button" id="mcarreras2">Ver mas carreras</button>
+        </ul>
+    </div>
+
+
 </div>
+
+
+
+
+
+<script src="assets/js/script.js"></script>
 </body>
+
 <footer>
     <div >
         <ul class="menu-final"> <!--Menu horizontal,menu final de hokja-->
@@ -81,8 +209,8 @@
             <li>Terminos de privacidad</li> <!--enlace a terminos de privacidad-->
             <div>
                 <li>Siguenos</li>
-                <input src="assets/img/imgprueba.jpeg" href="https://www.crackthecode.la/"> 
-                <input src="assets/img/imgprueba.jpeg" href="https://www.crackthecode.la/"> 
+                <a src="assets/img/imgprueba.jpeg" href="https://www.crackthecode.la/"> 
+                <a src="assets/img/imgprueba.jpeg" href="https://www.crackthecode.la/"> 
             </div>
         </ul>
     </div>
