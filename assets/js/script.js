@@ -293,3 +293,8 @@ $(document).ready(function () {
 // botom activador =  id="medicinacomun"
 // div a aparecer = medicina
 // butom cerrar =  
+
+
+
+
+
