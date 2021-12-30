@@ -66,7 +66,11 @@ header{
     display: inline-block;
     font: rgb(252, 255, 252);
 }
-
+.menu-icono:hover{
+    background-color: rgb(160, 147, 112);
+    display: block;
+    
+}
 .primera-hoja {
     display: flex;  
     flex-wrap: nowrap; 
@@ -110,6 +114,62 @@ header{
 
 }
 
+.gato {
+    width: 90%;
+    height: 12vw;
+}
+.flex-item{
+    width: 30%;
+    height: 18vw;
+    display: flex; 
+    background-color: darksalmon;
+    align-content: space-around;
+    justify-content: space-evenly;
+    gap: 1vw 1vw;
+    margin-left: 4%;
+    flex-wrap: wrap;
+    margin-right: 12vw;
+    margin-bottom: 0vw;
+    margin-top: 1vw;
+}
+.flex-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1vw;
+    margin-top: 12px;
+    background-color: rgb(104, 78, 78);
+    background-size: cover;
+}
+ 
+/* flex-item */
+h3{
+    font-size: 2vw;
+    width: 100%;
+    font-style: normal;
+    padding: 0px;
+    margin: 0px; 
+    
+    flex-wrap: nowrap;
+    text-align: center;
+}
+p {
+    text-align: center;
+    width: 95%;
+}
+
+h2{
+    font-size: 4vw;
+    width: 100%;
+    font-style: normal;
+    padding: 0px;
+    margin: 1vw; 
+    flex-wrap: nowrap;
+    text-align: center;
+}
 
 
 

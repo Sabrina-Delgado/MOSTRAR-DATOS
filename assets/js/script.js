@@ -137,7 +137,7 @@ $(document).ready(function () {
       $("#vermas2").show("slow");//mostrar
     });
     $("#mcarreras1").click(function () {
-      $("#vermas1").hide("slow"); //ocultar
+      $("#mcarreras1").hide("slow"); //ocultar
     });
     
 });
@@ -230,12 +230,12 @@ $(document).ready(function () {
 // div a aparecer = id="moda"
 // butom cerrar =  id="cerrarcarreramoda"
 $(document).ready(function () {
-    document.getElementById("bromatología").style.display= "none"
-    $("#imagebromatologia").click(function () {
-      $("#bromatología").show("slow");//mostrar
+    document.getElementById("moda").style.display= "none"
+    $("#imagemoda").click(function () {
+      $("#moda").show("slow");//mostrar
     });
-    $("#cerrarcarrerabromatologia").click(function () {
-      $("#bromatología").hide("slow"); //ocultar
+    $("#cerrarcarreramoda").click(function () {
+      $("#moda").hide("slow"); //ocultar
     });
 });
 
@@ -253,23 +253,7 @@ $(document).ready(function () {
 //--------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------
-var carrerras = {
-  comunicaciones: {
-    traductores : $("#litraductores"),//comu
-    cine : $("#licine"), //comu
-    foto : $("#lifoto"),//comu
-    moda : $("#limoda")  //comu
-  },
-  medicina: {
-    bioquimica: $("#libioquimica"),//ing
-    bromatologia:$("#libromatologia"),//ing
-    veterinaria: $("#liveterinaria"), //ing
-    bioquimica: $("#libioquimica"),//ing
-    alimentos: $("#liingalimentos"),//ing
-    nutricion: $("#linutricion"),//ing
-    agronomia: $("#liagronomia"),//ing
-  }
-}
+
 
 
 //-------------------------------------------------------------------------------
@@ -278,6 +262,7 @@ var carrerras = {
 // div a aparecer = comunicaciones
 // butom cerrar =  
 
+//MOstrar segun id de comunicacion que compartan, y eso generarlo como variables
 $(document).ready(function () {
   
   $("#comunicacionescomun").click(function () {
@@ -289,12 +274,79 @@ $(document).ready(function () {
 });
 
 //-------------------------------------------------------------------------------
-//Medicina
-// botom activador =  id="medicinacomun"
-// div a aparecer = medicina
-// butom cerrar =  
 
 
 
+/*
+
+var chart = new CanvasJS.Chart("chartContainer", { //LLama canvasjs, para un nuevon Objeto
+  animationEnabled: true,
+  theme: "light2",
+  title: {//Titutlo (frase de arrriba de la tabla)
+      text: `Casos COVID-19 en ${data.name}` //llama variable del Api, para completar frase a aparecer
+  },
+  axisX: { // Eje horizontal se llamara "fecha"
+      labelAngle: 50, //sus variables aparecesaran en un angulo de 50(inqulinadas)
+      title: "Fecha",
+  },
+  axisY: {
+      title: "Número de casos", //Eje Vertical de la derecha "Numero de Casos"
+  },
+  axisY2: {
+      title: "Número de fallecidos",//Eje Vertical de la izquierda "Numero de fallecidos"
+  },
+  data: [//Reseña de la tabla
+  {  // Linea Morada nuevos casos
+      type: "line",
+      showInLegend: true,
+      legendText: "Nuevos casos",
+      indexLabelFontSize: 16, //Tamaño de titulo
+      dataPoints: createArr(data, timeSpan)[0],
+  },
+  {// Linea Verde nuevos casos
+      type: "line",
+      axisYType: "secondary",
+      showInLegend: true,
+      legendText: "Nuevos fallecimientos",
+      indexLabelFontSize: 16,//Tamaño de titulo
+      dataPoints: createArr(data, timeSpan)[1],
+  }]
+});
 
 
+
+//------------------------------------------------------------------------------------------------------------------------------
+//Grafico segun variables
+//Crar Variables /Objrto/
+
+var Grafico = [];
+
+
+var grafico = [{
+  x: parametros,
+  y: valores,
+  type: "linear",
+}]
+
+function showResults(){
+  for(var i = 0; i< data.length; i++){
+    parametros.push(document.querySelectorAll('.parametro')[i].value);
+
+  }
+}
+
+
+
+var data = {
+  comunicacionesg: {
+    
+}}
+function mostrarDatos (comunicaciones){
+  for(var i = 0; i< data; i++){
+    $("#cerrarcarreratraductores").click(function () {
+      año2015c[0].show("slow").type("bar");//mostrar
+    });
+  }
+}
+
+*/

@@ -7,12 +7,13 @@
     <title>Carrearas Universitarias</title>
     <link rel="stylesheet" href="assets/css/estilos.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.plot.ly/ploty-latesr.min.js"></script>
 </head>
 <header>
     <nav>
     <ul class="menu-principal">
-        <li class="menu-icono-li"><a class="menu-icono" >TU CARRERA</a></li></li> 
-        <li class="menu-icono-li"><a class="menu-icono" >Te puede ayudar</a></li>
+        <li class="menu-icono-li"><a class="menu-icono"  >TU CARRERA</a></li></li> 
+        <li class="menu-icono-li"><a href="https://estudiaperu.pe/" class="menu-icono" >Te puede ayudar</a></li>
         <li class="menu-icono-li" id="registrate-li"><a class="menu-icono">Registrate</a></li>
     </ul>
     </nav>
@@ -53,6 +54,7 @@
     </div>
 </div>
 
+
 <!--Segunda pagina-->
 <div class="segunda hoja" id="segundahoja">
     <!--<button type="button" name="escoge-carrera" id="escoge-carrera" class="boton-menu1-aparecer" >De que se trata tu carrera</button> 
@@ -73,6 +75,7 @@
     <div class="carreras-principal">
         <!--Presenatcion de Carreras 1-->
         <ul class="flex-container" id="vermas1">
+            <h2>Carreras Universitarias</h2>
             <li class="flex-item" id=liingalimentos>
                 <h3>Ingeniería de Alimentos </h3>
                 <img src="assets/img/ingalimentos.jpg" class="gato" id="imageingalimentos">
@@ -95,16 +98,16 @@
             </li>
             <li class="flex-item" id=litraductores>
                 <h3>Traductores</h3>
-                <img src="assets/img/traductor.png" class="gato" id="imagetraductores">
+                <img src="assets/img/traductor.png"  class="gato" id="imagetraductores">
                 <div id="traductores">
                     <p>La carrera de Cinematografía te prepara con conocimientos de otras áreas o carreras como: Artes Audiovisuales, Realización Cinematográfica, Dirección de Cine y Televisión, Fotografía, Literatura, entre otras. Dependiendo qué rama de la cinematografía te interese puedes escoger entre especializarte en un área u otra.</p>
-                    <a href="#">Estadistica</a>
+                    <a href="#" id="tarductoreses">Estadistica</a>
                     <button id="cerrarcarreratraductores">Cerrar</button>
                 </div>
             </li>
             <li class="flex-item" id=linutricion>
                 <h3>Nutricion</h3>
-                <img src="assets/img/nutricion.jpg" class="gato" id="imagenutricion">
+                <img src="assets/img/nutricion.jpg"  class="gato" id="imagenutricion">
                 <div id="nutricion">
                     <p>La Nutrición es una carrera que pertenece al área de la salud, se encarga de estudiar las relaciones entre la alimentación y la salud de las personas. ... Parte de conocimientos en bioquímica, química orgánica y psicología, pero también comprende aptitudes en la gestión de salubridad alimentaria y servicios de salud</p>
                     <a href="#">Estadistica</a>
@@ -113,16 +116,16 @@
             </li>
             <li class="flex-item" id="licine">
                 <h3>Cine y Audio Visuales</h3>
-                <img src="assets/img/cine.jpg" class="gato" id="imagecine">
+                <img src="assets/img/cine.jpg"   class="gato" id="imagecine">
                 <div id="cine">
                     <p>La carrera de Cinematografía te prepara con conocimientos de otras áreas o carreras como: Artes Audiovisuales, Realización Cinematográfica, Dirección de Cine y Televisión, Fotografía, Literatura, entre otras. Dependiendo qué rama de la cinematografía te interese puedes escoger entre especializarte en un área u otra.</p>
-                    <a href="#">Estadistica</a>
+                    <a href="#" id="cinees">Estadistica</a>
                     <button id="cerrarcarreracine">Cerrar</button>
                 </div>
             </li>
             <li class="flex-item" id="liagronomia">
                 <h3>Agronomia</h3>
-                <img src="assets/img/agronomia.jpg" class="gato" id="imageagronomia">
+                <img src="assets/img/agronomia.jpg"  class="gato" id="imageagronomia">
                 <div id="agronomia">
                     <p>La agronomía es el conjunto de conocimientos científicos y tecnológicos que rigen la práctica de la agricultura, que es el arte de cultivar la tierra para producir alimentos y otras materias primas útiles para el ser humano</p>
                     <a href="#">Estadistica</a>
@@ -131,10 +134,10 @@
             </li>
             <li class="flex-item" id="liperiodismo" >
                 <h3>Periodismo y comunicacion social</h3>
-                <img src="assets/img/periodismo.jpg" class="gato" id="imageperiodismo">
+                <img src="assets/img/periodismo.jpg"  class="gato" id="imageperiodismo">
                 <div id="periodismo">
                     <p>La Comunicación Social abarca desde el periodismo hasta la comunicación interna en una empresa. ... El profesional de Comunicación Social que elija orientarse al periodismo estará relacionado con el “qué” y el “por qué” sobre los fenómenos que suceden en la sociedad: su labor será comprender y comunicar de la mejor manera.</p>
-                    <a href="#">Estadistica</a>
+                    <a href="#" id="periodismoes">Estadistica</a>
                     <button id="cerrarcarreraperiodismo">Cerrar</button>
                 </div>
             </li>
@@ -146,34 +149,34 @@
         <ul class="flex-container" id="vermas2">
             <li class="flex-item" id=lidgrafico>
                 <h3>Diseño grafico </h3>
-                <img src="assets/img/diseño grafico.jfif" class="gato" id="imagedgrafico">
+                <img src="assets/img/diseño grafico.jfif"   class="gato" id="imagedgrafico">
                 <div id="dgrafico">
                     <p >El diseño gráfico es la profesión que tiene como objetivo crear y transmitir mensajes a través de la imagen. ... El diseño gráfico también es llamado comunicación visual y es una profesión con una gran demanda debido al desarrollo de la tecnología y las formas actuales mediante las que los seres humanos nos comunicamos</p>
-                    <a href="#">Estadistica</a>
+                    <a href="#" id="diseñograficoes">Estadistica</a>
                     <button id="cerrarcarreradgrafico">Cerrar</button>
                 </div>
             </li>
             <li class="flex-item" id=libioquimica >
                 <h3>Bioquimica</h3>
-                <img src="assets/img/Bioquimica.jpg" class="gato" id="imagebioquimica">
+                <img src="assets/img/Bioquimica.jpg"   class="gato" id="imagebioquimica">
                 <div id="bioquímica">
                     <p>La bioquímica (también conocida como química biológica) se centra en los procesos de investigación biomédica que ocurren a nivel molecular, que incluyen lo que sucede dentro de nuestras células, estudiando proteínas y orgánulos.</p>
-                    <a href="#">Estadistica</a>
+                    <a href="#" >Estadistica</a>
                     <button id="cerrarcarrerabioquímica">Cerrar</button>
                 </div>
             </li>
             <li class="flex-item" id=lifoto >
                 <h3>Fotografia</h3>
-                <img src="assets/img/fotografia.jpg" class="gato" id="imagefoto">
+                <img src="assets/img/fotografia.jpg"  class="gato" id="imagefoto">
                 <div id="foto">
                     <p>Básicamente, en todo curso de fotografía aprenderemos a captar y editar imágenes de calidad a partir del conocimiento de los distintos elementos que integran una cámara de fotos, su aplicación práctica en base a diferentes técnicas fotográficas y el manejo de un programa de edición de imagen como es Photoshop.</p>
-                    <a href="#">Estadistica</a>
+                    <a href="#" id="fotes">Estadistica</a>
                     <button id="cerrarcarrerafoto">Cerrar</button>
                 </div>
             </li>
             <li class="flex-item" id=libromatologia >
                 <h3>Bromatilogia</h3>
-                <img src="assets/img/Bromatologia.jpg" class="gato" id="imagebromatologia">
+                <img src="assets/img/Bromatologia.jpg"  class="gato" id="imagebromatologia">
                 <div id="bromatología">
                     <p>La bromatología es una especialidad que analiza en profundidad las sustancias que ingiere en ser humano para sobrevivir.  La bromatología se ocupa, por tanto, de investigar la composición química, las calorías, los nutrientes, las propiedades físicas y la toxicología de los alimentos, entre otras propiedades</p>
                     <a href="#">Estadistica</a>
@@ -182,19 +185,19 @@
             </li>
             <li class="flex-item" id=liveterinaria>
                 <h3>Veterinaria</h3>
-                <img src="assets/img/Veterinaria.jpeg" class="gato" id="imageveterinaria">
+                <img src="assets/img/Veterinaria.jpeg"   class="gato" id="imageveterinaria">
                 <div id="veterinaria">
                     <p>La carrera en Medicina Veterinaria y Zootecnia tiene una duración de 5 años. En ella estudiarás a los animales desde nivel celular hasta orgánico, pasando por su fisiología y las distintas patologías que pueden sufrir. ... Recursos y Sistemas de alimentación animal. Toxicología veterinaria</p>
-                    <a href="#">Estadistica</a>
+                    <a href="#" id="veterinariaes">Estadistica</a>
                     <button id="cerrarcarreraveterinaria">Cerrar</button>
                 </div>
             </li>
             <li class="flex-item" id="limoda" >
                 <h3>Diseño de Indumentaria</h3>
-                <img src="assets/img/modaindumentaria.jpg" class="gato" id="imagemoda">
+                <img src="assets/img/modaindumentaria.jpg"   class="gato" id="imagemoda">
                 <div id="moda">
                     <p>El diseño de modas es la aplicación de los principios del arte y el diseño a las prendas de ropa y accesorios que las personas utilizan. ... Estudiar Diseño de Modas te da las herramientas necesarias para analizar el mercado global e idear el mejor producto, de acuerdo a la demanda de necesidades y preferencias</p>
-                    <a href="#">Estadistica</a>
+                    <a href="#" id="modades">Estadistica</a>
                     <button id="cerrarcarreramoda">Cerrar</button>
                 </div>
             </li>
