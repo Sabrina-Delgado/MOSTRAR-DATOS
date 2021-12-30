@@ -11,7 +11,7 @@ Los resulve dandoles mas opciones de elegir, proporcionando informacion de carre
 
 
 --Comentarios--
--Al inicio tuvimos prolemas con Java Script, no sabiamos como concretamente crear un "objeto", y que relacion tendria con el array del que tanto se nos hablaba, sin embargo con le paso del tiempo pudimos comprender que era darle valor a cada variable y determinar su interior con arrays.
+-Al inicio tuvimos prolemas con Java Script, no sabiamos como concretamente crear un "objeto", y que relacion tendria con el array del que tanto se nos hablaba, sin embargo con lepaso del tiempo pudimos comprender que era darle valor a cada variable y determinar su interior con arrays.
 
 -Se nos hizo complicado el echo de que sea una interfaz visualmente adaptable, fue en lo que ams tiempo pusimos en el proyecto, ya que habian cosas que por nuestra propia cuenta investigamos, cierta parte del proyecto completo este crierio, pero no del todo.
 
