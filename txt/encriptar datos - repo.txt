@@ -5,6 +5,29 @@ git remote add origin https://github.com/Sabrina-Delgado/MOSTRAR-DATOS.git
 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
 -git:
 git remote add origin https://Sabrina-Delgado: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@github.com/Sabrina-Delgado/MOSTRAR-DATOS.git
+https://github.com/Sabrina-Delgado/MOSTRAR-DATOS.git
+
+Nuevo----------------------------------------------------------------------------
+-Nuevo tokem: 
+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
+-Repositorio:
+https://github.com/Sabrina-Delgado/Mostrar-Datos-2.git
+-git:
+git remote add origin https://Sabrina-Delgado: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@github.com/Sabrina-Delgado/Mostrar-Datos-2.git
+
+Nuevo 2------------------------------------
+-Nuevo tokem: 
+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
+-Repositorio:
+https://github.com/Sabrina-Delgado/Mostrar-Datos-2.git
+-git:
+git remote add origin https://Sabrina-Delgado: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@github.com/Sabrina-Delgado/Mostrar-Datos-2.git
+
+
+
+
+
+
 
 LINKS DE REFERENCIAS
 - https://www.nosequeestudiar.net/carreras/

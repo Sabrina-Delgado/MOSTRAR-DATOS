@@ -16,14 +16,14 @@ header{
     text-align: center;
     position: fixed;
     z-index: 100;
-    background-color: rgb(173, 196, 188);
+    background-color:rgb(196, 179, 134);
     top: 0;
     left: 0;
     background-size: cover;
     max-height: 6%;
 }
 .menu-principal {
-    background-color: rgb(179, 133, 73);
+    background-color: rgb(196, 179, 134);
     display: flex;  
     flex-wrap: nowrap; 
     justify-content: space-evenly;
@@ -40,7 +40,7 @@ header{
 .menu-icono-li {
     width: 33%;
     height: 5vw;
-    background-color: rgb(235, 187, 133);
+    background-color: rgb(196, 179, 134);
     text-align: center;
     flex-wrap: nowrap;
     padding: 0;
@@ -48,6 +48,7 @@ header{
     display: inline-block;
     
 }
+
 
 .menu-icono {
     background-color: rgb(196, 179, 134);
@@ -67,6 +68,13 @@ header{
     font: rgb(252, 255, 252);
 }
 
+.menu-icono:hover{
+    background-color: rgb(211, 186, 116);
+    font-size: 3vw;
+    border-radius: 40px;
+    
+}
+
 .primera-hoja {
     display: flex;  
     flex-wrap: nowrap; 
@@ -76,6 +84,7 @@ header{
     margin-right: 0;
     margin-top: 2vw;  
     background-size: cover;
+    margin-bottom: 0;
 }
 
 
@@ -105,56 +114,136 @@ header{
 .registrate{
     
     background-color: rgb(211, 167, 141);
-    
-   
+    width: 55%;
+    position: absolute;
+    height: 75%;
+    border-radius: 90px;
+    margin-left:  15%;
+    margin-top: 15%;
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
+.registrate > form {
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.registrate > button {
+    margin-left: 10%;
+}
 .flex-container {
-    We first create a flex layout context 
-   display: flex;
-   
-   Then we define the flow direction 
-      and if we allow the items to wrap 
-    * Remember this is the same as:
-    * flex-direction: row;
-    * flex-wrap: wrap;
-    
-   flex-flow: row wrap; 
-   
-   /Then we define how is distributed the remaining space /
-   justify-content: space-around;
-   
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap; 
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ 
+.flex-item {
+   width: 33%;
+   height: 25vw;
+   background-color: darksalmon;
    padding: 0;
-   margin: 0;
-   list-style: none;
+   margin: 1,8vw;
+   text-align: center;
+   font-size: 100%;
+   margin-top: 2vw;
+   border-radius: 4vw;
+   
+}
+.flex-item > h3 {
+    font-size: 2vw;
+}
+.flex-item:hover {
+    width: 32%;
+    height: 24vw;
+    transition: 1ms;
+    background-color: rgb(230, 183, 168);
+}
+
+.gato{
+   width: 94%;
+   height: 64%;
+    border-radius: 180px;
+}
+.textos{
+    font-size: 0,4vw;
+    position: absolute;
+    width: 50%;
+    height: 25vw;
+    background-color: lemonchiffon;
+    border-radius: 80px;
+    
+}
+.textos > p {
+    width: 85%;
+    margin-left: 8%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+button {
+    padding: 0;
+    margin: 1%;
+    background-color: lightblue ;
+    border-radius: 20px;
+    font-size: 90%;
+    width: 15vw;
+    height: 4vw;
+    border: none;
+}
+button:hover{
+    background-color: rgb(131, 188, 207) ;
+    width: 16vw;
+    height: 5vw;
+    font-size: 100%;
+    transition: 1ms;
+    
+}
+.segunda-hoja > button{
+    position: absolute;
+    margin-left: 45%;
+    margin-top: -6%;
+
+}
+.segunda-hoja > h3 {
+    font-size: 4vw;
+    margin-left: 30%;
+}
+.segunda-hoja > p {
+    font-size: 2vw;
+    margin-left: 15%;
+}
+
+.segunda-hoja{
+    background-color: rgb(233, 214, 252);
+    margin: 0;
+}
+.menu-final {
+    background-color: rgb(25, 25, 90);
+    list-style: none;
+    display: flex;
+    color: mintcream;
+    margin-bottom: 0pt;
+    margin-top: 0px;
+}
+ .menu-final> li{
+     width: 33%;
+     height: 20%;
+
  }
- 
- .flex-item {
-   width: 200px;
-   height: 150px;
-   line-height: 150px;
+ .menu-final> li> h4{
+    font-size: 2vw;
+    width: 90%;
  }
- .gato{
-   width: 200px;
-   height: 150px;
- 
+ .menu-final> li> a {
+    width: 90%;
+    color: mintcream;
+    margin: 8vw;
+    margin-top: 0px;
+    margin-bottom: 1vw;
+
  }
-*/

@@ -39,13 +39,14 @@ $(document).ready( function () {
 //--------------------------------------------------------------------------------------------------------------------
 //Function Igieneria de alimentos
 // botom activador =  id= image-carrera-1
-// div a aparecer = id= aparecer-carreras
+// div a aparecer = id= ingalimentos
+// butom cerrar = id=cerrarcarreraingalimentos
 $(document).ready(function () {
     document.getElementById("ingalimentos").style.display= "none"
     $("#imageingalimentos").click(function () {
       $("#ingalimentos").show("slow");//mostrar
     });
-    $("#cerrarcarreraingalimentoss").click(function () {
+    $("#cerrarcarreraingalimentos").click(function () {
       $("#ingalimentos").hide("slow"); //ocultar
     });
     
@@ -137,7 +138,7 @@ $(document).ready(function () {
       $("#vermas2").show("slow");//mostrar
     });
     $("#mcarreras1").click(function () {
-      $("#vermas1").hide("slow"); //ocultar
+      $("#mcarreras1").hide("slow"); //ocultar
     });
     
 });
@@ -230,12 +231,12 @@ $(document).ready(function () {
 // div a aparecer = id="moda"
 // butom cerrar =  id="cerrarcarreramoda"
 $(document).ready(function () {
-    document.getElementById("bromatología").style.display= "none"
-    $("#imagebromatologia").click(function () {
-      $("#bromatología").show("slow");//mostrar
+    document.getElementById("moda").style.display= "none"
+    $("#imagemoda").click(function () {
+      $("#moda").show("slow");//mostrar
     });
-    $("#cerrarcarrerabromatologia").click(function () {
-      $("#bromatología").hide("slow"); //ocultar
+    $("#cerrarcarreramoda").click(function () {
+      $("#moda").hide("slow"); //ocultar
     });
 });
 
